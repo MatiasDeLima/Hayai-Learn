@@ -1,11 +1,34 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 
 import { navLinks } from "../../assets/data/index.js";
 
 const Header = () => {
+  /*=============== TOGGLE MENU ===============*/
+  const [Toggle, showMenu] = useState(false);
+
+  /*=============== CHANGE BG HEADER ===============*/
+  const headerRef = useRef(null);
+
+  const headerFunc = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      headerRef.current.classList.add("scroll-header");
+    } else {
+      headerRef.current.classList.remove("scroll-header");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", headerFunc);
+
+    return () => window.removeEventListener("scroll", headerFunc);
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
         <nav className="nav container">
             <a href="">
               <svg width="72" height="28" viewBox="0 0 73 28" fill="none">
@@ -13,7 +36,7 @@ const Header = () => {
               </svg>
             </a>
 
-            <div className="nav__menu">
+            <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
               <ul className="nav__list">
                 {navLinks.map((nav, index) => (
                   <li
@@ -28,12 +51,12 @@ const Header = () => {
               </ul>
 
               <div className="nav__buttons">
-                  <a href="" className="button">Sign Up</a>
+                  <a href="" className="nav__button">Sign Up</a>
 
-                  <a href="" className="button-ghost">Login</a>
+                  <a href="" className="nav__button-ghost">Login</a>
               </div>
 
-              <div className="nav__close">
+              <div className="nav__close" onClick={() => showMenu(!Toggle)}>
                 <i className="ri-close-line"></i>
               </div>
 
@@ -49,7 +72,7 @@ const Header = () => {
               <div className="green-geometry nav__geometry-6"></div>
             </div>
 
-            <div className="nav__toggle">
+            <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
               <i className="ri-menu-line"></i>
             </div>
         </nav>

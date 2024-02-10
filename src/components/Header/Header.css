@@ -30,7 +30,19 @@
     padding-block: 7rem 2rem;
     transition: right 0.3s;
     z-index: var(--z-fixed);
+    overflow: hidden;
   }
+}
+
+/* Show Menu */
+.show-menu {
+  right: 0;
+}
+
+/* Scroll Header */
+.scroll-header {
+  background-color: #fff;
+  box-shadow: 4px 0 12px #dfdfdf2c;
 }
 
 .nav__close {
@@ -85,7 +97,7 @@
 }
 
 /* NAV BUTTONS */
-.button {
+.nav__button {
   display: inline-block;
   padding: 1.1rem 2rem;
   font-weight: var(--font-semi-bold);
@@ -94,7 +106,7 @@
   border-radius: 5rem;
 }
 
-.button-ghost {
+.nav__button-ghost {
   display: inline-block;
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);

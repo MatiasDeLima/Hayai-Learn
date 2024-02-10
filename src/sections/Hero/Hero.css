@@ -1,0 +1,292 @@
+.hero {
+  position: relative;
+}
+
+.hero__container {
+  padding-top: 5.5rem;
+  row-gap: 3.438rem;
+}
+
+.hero__data {
+  position: relative;
+}
+
+/* Hero Title */
+.hero__title {
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  font-size: var(--biggest-font-size);
+  font-family: var(--title-font);
+}
+
+.h1__colum {
+  position: relative;
+}
+
+.hero__text-line {
+  width: 140px;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.h1__decoration {
+  column-gap: 0.5rem;
+  display: flex;
+}
+
+.hero__description {
+  line-height: 24px;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}
+
+/* HERO IMAGE */
+.hero__image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: var(--body-color);
+  box-shadow: 0 36px 160px rgb(7, 17, 54, 4%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+
+.hero__img {
+  transform: translateY(-0.7rem);
+  width: 260px;
+}
+
+/* Rate Component */
+.hero__rate {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--body-color);
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 6px 20px 6px 6px;
+  left: 0;
+  bottom: 2rem;
+}
+
+.hero__rate-img {
+  width: 32px;
+  height: 32px;
+}
+
+.hero__rate-title {
+  font-size: 10px;
+  font-weight: var(--font-bold);
+  color: var(--dark-color);
+  box-shadow: 0px 8px 50px rgb(2, 3, 24, 0.04);
+}
+
+.hero__rate-categorie {
+  font-size: 8px;
+  font-weight: var(--font-medium);
+}
+
+/* Youtube */
+.hero__youtube {
+  position: absolute;
+  left: 4rem;
+  top: -1rem;
+  z-index: 1;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 12px 32px 0px rgba(4, 23, 46, 0.116);
+  transform: rotate(-35deg);
+}
+
+/* Component Advantage */
+.hero__advantages {
+  width: 120px;
+  height: 144px;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 8px;
+  box-shadow: 0px 12px 60px 0px rgba(2, 3, 24, 0.06);
+  right: -5px;
+  top: 5rem;
+}
+
+.hero__advantages-title {
+  font-size: 10px;
+  font-weight: var(--font-bold);
+  color: var(--dark-color);
+  margin-bottom: 12px;
+}
+
+.hero__advantages-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 12px;
+}
+
+.hero__advantages-item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.hero__advantages-icon {
+  background-color: #fff;
+  padding: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 12px 18px 0px rgba(4, 23, 46, 0.11);
+}
+
+.hero__advantages-icon i {
+  color: var(--green-color);
+}
+
+.hero__advantages-text {
+  font-size: 8px;
+  font-weight: var(--font-semi-bold);
+  color: var(--dark-color);
+}
+
+.hero__advantages-button {
+  color: var(--orange-color);
+  font-size: 8px;
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  cursor: pointer;
+}
+
+.hero__advantages-button i {
+  font-size: 10px;
+  transition: 0.3s;
+}
+
+.hero__advantages-button:hover i {
+  transform: translateX(2px);
+}
+
+/* Geometry Decorations */
+.geometry {
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.geometry__8 {
+  width: 8px;
+  height: 8px;
+}
+
+.geometry__10 {
+  width: 10px;
+  height: 10px;
+}
+
+.geometry__12 {
+  width: 12px;
+  height: 12px;
+}
+
+.geometry__14 {
+  width: 14px;
+  height: 14px;
+}
+
+.geometry__16 {
+  width: 16px;
+  height: 16px;
+}
+
+.geometry__20 {
+  width: 20px;
+  height: 20px;
+}
+
+.geometry__blue {
+  background-color: #2b529f;
+}
+
+.geometry__orange {
+  background-color: #ff6542;
+}
+
+.geometry__yellow {
+  background-color: #f9c440;
+}
+
+.geometry__green {
+  background-color: #28b089;
+}
+
+/* Geometry Position data */
+.hero__geometry-1 {
+  top: -1.5rem;
+  left: 2.5rem;
+}
+
+.hero__geometry-2 {
+  top: 8rem;
+  left: 15rem;
+}
+
+.hero__geometry-3 {
+  bottom: -2rem;
+  left: 3rem;
+}
+
+/* Geometry Position Image */
+.hero__geometry-4 {
+  top: 4rem;
+  left: -0.5rem;
+}
+
+.hero__geometry-5 {
+  bottom: -.5rem;
+  right: 2rem;
+  transform: rotate(-35deg);
+}
+
+.hero__geometry-6 {
+  bottom: .5rem;
+  right: 3rem;
+  transform: rotate(-35deg);
+}
+
+/* Shadows */
+.hero__circle-shadow-1,
+.hero__circle-shadow-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: var(--yellow-color);
+  opacity: 10%;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+}
+.hero__circle-shadow-1 {
+  top: -3rem;
+  left: -3rem;
+}
+
+.hero__circle-shadow-2 {
+  bottom: -3rem;
+  right: -3rem;
+}

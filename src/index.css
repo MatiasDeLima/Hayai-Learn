@@ -36,7 +36,7 @@
   /*========== Font and typography ==========*/
   --body-font:  "Montserrat", sans-serif;
   --title-font: chillax;
-  --biggest-font-size: 2.25rem;
+  --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -136,4 +136,21 @@ button {
 
 .main {
   overflow: hidden; /*For animation*/
+}
+
+/* TEXTS COLORS */
+.orange__text-color {
+  color: var(--orange-color);
+}
+
+.yellow__text-color {
+  color: var(--yellow-color);
+}
+
+.blue__text-color {
+  color: var(--blue-color);
+}
+
+.green__text-color {
+  color: var(--green-color);
 }

@@ -1,4 +1,5 @@
 import heroImage from "./hero-image.webp";
+import heroLine from "./hero-text-line.svg";
 import analizeImage from "./analize-image.webp";
 import featureImage1 from "./features-image-1.webp";
 import featureImage2 from "./features-image-2.webp";
@@ -16,6 +17,7 @@ import videoImage2 from "./video-image-2.webp";
 
 export {
     heroImage,
+    heroLine,
     analizeImage,
     featureImage1,
     featureImage2,

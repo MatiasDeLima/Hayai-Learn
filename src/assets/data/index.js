@@ -44,7 +44,7 @@ export const testimonials = [
         img: testimonialsImage2,
         name: "Carmen Martinez",
         status: "Student",
-        text: "Learning Japanese through this online platform has been a game-changer! Structured lessons, interactive exercises, and cultural insights make it both effective and enjoyable. Highly recommend for anyone"
+        text: "Learning Japanese through this online platform has been a game-changer! Structured lessons, interactive exercises, and cultural insights make it both effective and enjoyable."
     },
     {
         id: "testimonial-3",

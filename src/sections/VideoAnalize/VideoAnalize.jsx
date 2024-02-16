@@ -3,6 +3,7 @@ import "./VideoAnalize.css";
 import Button from '../../components/Button/Button.jsx';
 import VideoComponent from '../../components/VideoComponent/VideoComponent.jsx';
 import { analizeImage } from "../../assets/images/index.js";
+import { videoImage1 } from "../../assets/images/index.js";
 
 const VideoAnalize = () => {
   return (
@@ -34,7 +35,10 @@ const VideoAnalize = () => {
         </div>
 
         <div className="video__content container">
-            <VideoComponent />
+            <VideoComponent 
+              image={videoImage1}
+              title="Japanese with John Miyazaki"
+            />
         </div>
       </div>
     </section>

@@ -1,11 +1,10 @@
 import React from "react";
 import "./VideoComponent.css";
-import { videoImage1 } from "../../assets/images/index.js";
 
-const VideoComponent = () => {
+const VideoComponent = (props) => {
   return (
     <div className="video__component">
-      <h3 className="video__component-title">Japanese with John Miyazaki</h3>
+      <h3 className="video__component-title">{props.title}</h3>
       <p className="video__component-description">N5 - Beginner level</p>
 
       <div className="video__component-play">
@@ -47,7 +46,7 @@ const VideoComponent = () => {
           </div>
         </div>
 
-        <img src={videoImage1} alt="" className="video__component-img" />
+        <img src={props.image} alt="" className="video__component-img" />
       </div>
 
       <div className="video__component-bottom">

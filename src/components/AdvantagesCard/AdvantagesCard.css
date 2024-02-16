@@ -1,0 +1,18 @@
+.advantages__card {
+  filter: drop-shadow(0px 0px 150px rgba(99, 122, 166, 0.13));
+  position: relative;
+}
+
+.advantages-mask {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+}
+
+.advantages__card-bg {
+  text-align: center;
+  clip-path: url(#advantages-clip);
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 0 1.25rem 2rem 1.25rem;
+}

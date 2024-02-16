@@ -1,0 +1,17 @@
+.demo__title {
+  text-align: center;
+  font-family: var(--title-font);
+}
+
+.demo__title-line {
+  position: relative;
+}
+
+.demo__title-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--green-color);
+  bottom: -4px;
+}

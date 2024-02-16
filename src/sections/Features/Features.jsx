@@ -19,7 +19,7 @@ const Features = () => {
 
       <div className="features__container container">
         <Swiper
-          spaceBetween={24}
+          spaceBetween={32}
           slidesPerView={1}
           centeredSlides={true}
           grabCursor={true}

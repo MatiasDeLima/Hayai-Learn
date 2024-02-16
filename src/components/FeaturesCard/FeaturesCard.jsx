@@ -19,24 +19,24 @@ export const FeaturesCard = (props) => {
             </div>
 
             <div className="features__card-bg">
-            <div className="features__card-data">
-                <img src={props.image} alt="" />
+              <div className="features__card-data">
+                  <img src={props.image} alt="" />
 
-                <h3 className="features__card-title">
-                {props.title}
-                </h3>
+                  <h3 className="features__card-title">
+                  {props.title}
+                  </h3>
 
-                <p className="features__card-description">
-                {props.content}
-                </p>
-            </div>
+                  <p className="features__card-description">
+                  {props.content}
+                  </p>
+              </div>
 
-            <button className="button features__button">
-                Learn More
-                <div className="button__icon">
-                <i className="ri-arrow-right-up-line"></i>
-                </div>
-            </button>
+              <button className="button features__button">
+                  Learn More
+                  <div className="button__icon">
+                  <i className="ri-arrow-right-up-line"></i>
+                  </div>
+              </button>
             </div>
         </article>
     </>

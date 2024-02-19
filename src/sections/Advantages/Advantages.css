@@ -1,13 +1,18 @@
-.demo__title {
+.advantages__container {
+  padding-top: 2.75rem;
+  row-gap: 2rem;
+}
+
+.advantages__title {
   text-align: center;
   font-family: var(--title-font);
 }
 
-.demo__title-line {
+.advantages__title-line {
   position: relative;
 }
 
-.demo__title-line::before {
+.advantages__title-line::before {
   content: "";
   position: absolute;
   width: 100%;

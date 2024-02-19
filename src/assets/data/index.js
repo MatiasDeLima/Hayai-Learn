@@ -110,20 +110,23 @@ export const features = [
 export const advantages = [
     {
         id: "advantages-1",
+        icon: "ri-global-line",
         content:
             "Helps develop your intuition rather than translating from your native language, you’ll begin to think in Japanese.",
         title: "Replicates the way infants naturally acquire language.",
     },
     {
         id: "advantages-2",
+        icon: "ri-global-line",
         content:
             "It's fun because you get to choose content you enjoy and it's not intimidating because you can choose videos appropriate for your level",
         title: "Sustainable way of learning Japanese",
     },
     {
         id: "advantages-3",
+        icon: "ri-global-line",
         content:
-            "Through shadowing (repeating a phrase or sentence that has just been said) a Native speaker from Youtube videos, you learn how people speak in real life",
+            "Through shadowing (repeating a phrase or sentence that has just been said) a Native speaker from Youtube videos.",
         title: "Designed to help you speak like a native",
     },
 ];

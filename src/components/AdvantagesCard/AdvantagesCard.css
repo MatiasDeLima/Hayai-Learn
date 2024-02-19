@@ -1,6 +1,8 @@
 .advantages__card {
   filter: drop-shadow(0px 0px 150px rgba(99, 122, 166, 0.13));
   position: relative;
+  width: 327px;
+  height: 265px;
 }
 
 .advantages-mask {
@@ -14,5 +16,41 @@
   clip-path: url(#advantages-clip);
   background-color: #fff;
   border-radius: 1.5rem;
-  padding: 0 1.25rem 2rem 1.25rem;
+  padding: 1.5rem 1.25rem;
+  text-align: initial;
+}
+
+.advantages__card-title {
+  font-family: var(--title-font);
+  font-size: 1rem;
+  color: var(--dark-color);
+  margin-bottom: 1.25rem;
+  padding-right: 2.5rem;
+}
+
+.advantages__card-text {
+  font-size: 0.875rem;
+  line-height: 21px;
+  margin-bottom: 32px;
+}
+
+.advantages__button {
+  height: 48px;
+}
+
+.advantages__card-icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  color: var(--orange-color);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 12px 32px 0px rgba(7, 17, 54, 0.08);
 }

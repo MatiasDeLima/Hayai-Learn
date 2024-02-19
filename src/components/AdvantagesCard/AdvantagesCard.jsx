@@ -1,7 +1,7 @@
 import React from 'react';
 import "./AdvantagesCard.css";
 
-const AdvantagesCard = () => {
+const AdvantagesCard = (props) => {
   return (
     <>
         <svg className="advantages-mask">
@@ -12,20 +12,19 @@ const AdvantagesCard = () => {
 
         <article className="advantages__card">
             <div className="advantages__card-icon">
-                <i class="ri-global-line"></i>
+                <i className={props.icon}></i>
             </div>
 
             <div className="advantages__card-bg">
                 <h3 className="advantages__card-title">
-                    Replicates the way infants naturally acquire language.
+                    {props.title}
                 </h3>
 
                 <p className="advantages__card-text">
-                    Helps develop your intuition rather than translating from your 
-                    native language, youll begin to think in Japanese.
+                    {props.text}
                 </p>
 
-                <button className="button features__button">
+                <button className="button advantages__button">
                   Learn More
                   <div className="button__icon">
                     <i className="ri-arrow-right-up-line"></i>

@@ -1,16 +1,24 @@
 import React from 'react';
 import "./Advantages.css";
 import AdvantagesCard from '../../components/AdvantagesCard/AdvantagesCard.jsx';
+import { advantages } from '../../assets/data/index.js';
 
 const Advantages = () => {
   return (
-    <section className="demo section">
-      <h2 className="demo__title">
+    <section className="advantages section">
+      <h2 className="advantages__title">
         The <span className="orange__text-color">Advantage</span> of <br/>
-        <span className="orange__text-color">Language</span> <span className="demo__title-line">Immersion</span>
+        <span className="orange__text-color">Language</span> <span className="advantages__title-line">Immersion</span>
       </h2>
-      <div className="demo__container container grid">
-        <AdvantagesCard />
+      <div className="advantages__container container grid">
+       {advantages.map((e, index) => (
+          <AdvantagesCard 
+          key={e.id}
+          title={e.title}
+          text={e.content}
+          icon={e.icon}
+        />
+       ))}
       </div>
     </section>
   )

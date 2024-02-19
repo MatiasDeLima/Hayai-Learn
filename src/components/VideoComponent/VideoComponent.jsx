@@ -20,27 +20,27 @@ const VideoComponent = (props) => {
           <div className="video__component-actions">
             <div className="video__actions-flex">
               <button className="video__component-button background-orange white__color">
-                <i class="ri-pause-mini-fill"></i>
+                <i className="ri-pause-mini-fill"></i>
               </button>
 
               <button className="video__component-button">
-                <i class="ri-loop-left-fill"></i>
+                <i className="ri-loop-left-fill"></i>
               </button>
 
               <button className="video__component-button">
-                <i class="ri-loop-right-line"></i>
+                <i className="ri-loop-right-line"></i>
               </button>
             </div>
 
             <div className="video__actions-flex">
               <button className="video__component-button">
-                <i class="ri-movie-2-line"></i>
+                <i className="ri-movie-2-line"></i>
               </button>
               <button className="video__component-button">
-                <i class="ri-folder-video-line"></i>
+                <i className="ri-folder-video-line"></i>
               </button>
               <button className="video__component-button">
-                <i class="ri-sidebar-unfold-line"></i>
+                <i className="ri-sidebar-unfold-line"></i>
               </button>
             </div>
           </div>
@@ -65,7 +65,7 @@ const VideoComponent = (props) => {
             </h3>
 
             <button className="video__legend-copy">
-              <i class="ri-file-copy-fill"></i>
+              <i className="ri-file-copy-fill"></i>
             </button>
           </div>
 
@@ -75,7 +75,7 @@ const VideoComponent = (props) => {
             </h3>
 
             <button className="video__legend-copy">
-              <i class="ri-file-copy-fill"></i>
+              <i className="ri-file-copy-fill"></i>
             </button>
           </div>
         </div>
